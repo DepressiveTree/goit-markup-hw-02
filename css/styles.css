@@ -3,7 +3,7 @@ body {
     font-family: 'Roboto', sans-serif;
     background: #FFFFFF;
     font-family: Roboto;
-    color: #212121;
+    color: var(--almost-black-color);
 }
 
 a {
@@ -14,12 +14,16 @@ button {
     font-family: inherit;
     cursor: pointer;
 }
+ul {
+    list-style: none;
+}
 
 :root {
     --blue-color: #2196F3;
     --gray-color: #757575;
     --white-color: #FFFFFF;
     --notwhite-color: #F5F4FA;
+    --almost-black-color: #212121;
 }
 
 /* шапка и елементы */
@@ -28,23 +32,24 @@ button {
     font-family: Raleway;
     font-weight: bold;
     font-size: 26px;
-    line-height: 1,19;
+    line-height: 1.19;
     letter-spacing: 0.03em;
     color: var(--blue-color);
 }
 
 .main-page-link-logo {
-    color: black;
+    color: var(--almost-black-color);
 }
 
 .nav-sections {
     font-weight: 500;
     font-size: 14px;
-    line-height: 1,14;
+    line-height: 1.14;
     letter-spacing: 0.02em;
-    color: #212121; 
+    color: var(--almost-black-color); 
 }
 
+.nav-sections.active,
 .nav-sections:hover,
 .nav-sections:focus {
     color: var(--blue-color);
@@ -54,7 +59,7 @@ button {
 .main-phone-header {
     font-weight: 500;
     font-size: 14px;
-    line-height: 1,14;
+    line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--gray-color);
 }
@@ -77,7 +82,7 @@ button {
 .main-page-face-text {
     font-weight: 900;
     font-size: 44px;
-    line-height: 1,36;
+    line-height: 1.36;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -90,7 +95,7 @@ button {
     border-radius: 4px;
     font-weight: bold;
     font-size: 16px;
-    line-height: 1,87;
+    line-height: 1.87;
     display: flex;
     align-items: center;
     text-align: center;
@@ -98,19 +103,25 @@ button {
     color: var(--white-color);
 }
 
+.main-page-face-button:focus,
+.main-page-face-button:hover {
+    background: #188CE8;
+    ;
+}
+
 /* Характеристики*/
 
 .main-page-specifications-title{
     font-weight: bold;
     font-size: 14px;
-    line-height: 1,14;
+    line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
 }
 
 .main-page-specifications-text {
     font-size: 14px;
-    line-height: 1,71;
+    line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--gray-color);
 }
@@ -119,7 +130,7 @@ button {
 .main-page-titles {
     font-weight: bold;
     font-size: 36px;
-    line-height: 1,17;
+    line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
 }
@@ -138,7 +149,7 @@ button {
 .main-page-team-name {
     font-weight: 500;
     font-size: 16px;
-    line-height: 1,19;
+    line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
 }
@@ -146,7 +157,7 @@ button {
 .main-page-team-position {
     font-weight: normal;
     font-size: 16px;
-    line-height: 1,19;
+    line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--gray-color);
@@ -161,7 +172,7 @@ button {
     border-radius: 4px;
     font-weight: 500;
     font-size: 16px;
-    line-height: 1,62;
+    line-height: 1.62;
     text-align: center;
     letter-spacing: 0.03em;
 }
@@ -173,7 +184,7 @@ button {
     border-radius: 4px;
     font-weight: 500;
     font-size: 16px;
-    line-height: 1,62;
+    line-height: 1.62;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--white-color);
@@ -190,12 +201,13 @@ button {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+    color: var(--almost-black-color);
 }
 
 .portfolio-variant-type {
     font-weight: normal;
     font-size: 16px;
-    line-height: 1,87;
+    line-height: 1.87;
     letter-spacing: 0.03em;
     color: var(--gray-color);
 }
@@ -210,7 +222,7 @@ button {
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
-    line-height: 1,71;
+    line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--white-color);
 }
@@ -220,7 +232,7 @@ button {
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
-    line-height: 1,71;
+    line-height: 1.71;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6); 
 }
